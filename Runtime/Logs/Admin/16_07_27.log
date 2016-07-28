@@ -1,0 +1,129 @@
+[ 2016-07-27T16:44:53+08:00 ] 127.0.0.1 /index.php/Admin/
+ERR: 无法加载控制器:Homepage
+
+[ 2016-07-27T16:45:20+08:00 ] 127.0.0.1 /index.php/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.3510s ]
+SQL: SELECT * FROM `shop_user` WHERE `username` = 'wanggang' LIMIT 1   [ RunTime:0.0242s ]
+NOTIC: [8] Undefined index: validate /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `shop_user` SET `login_count`='2',`login_time`='1469609120',`login_ip`='127.0.0.1' WHERE `id` = 2 [ RunTime:0.0422s ]
+NOTIC: [8] Undefined index: uid /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 85 行.
+NOTIC: [8] Undefined index: superadmin /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from shop_role as role,shop_role_user as user,shop_role_node as access ,shop_node as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.1007s ]
+
+[ 2016-07-27T16:49:16+08:00 ] 127.0.0.1 /index.php/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `shop_user` SET `login_count`='11',`login_time`='1469609356',`login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: uid /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 85 行.
+NOTIC: [8] Undefined index: superadmin /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from shop_role as role,shop_role_user as user,shop_role_node as access ,shop_node as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0001s ]
+
+[ 2016-07-27T16:49:27+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0005s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0003s ]
+
+[ 2016-07-27T16:49:29+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0004s ]
+
+[ 2016-07-27T16:49:58+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: UPDATE `shop_user` SET `password`='wanggang',`email`='wanggang@qq.com' WHERE `id` = 2 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0006s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='1' WHERE `user_id` = '2' [ RunTime:0.0002s ]
+
+[ 2016-07-27T17:33:03+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0006s ]
+SQL: UPDATE `shop_user` SET `password`='wanggang',`email`='wanggang@qq.com' WHERE `id` = 2 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0005s ]
+
+[ 2016-07-27T17:33:45+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 2,2   [ RunTime:0.0011s ]
+
+[ 2016-07-27T17:33:48+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 4,2   [ RunTime:0.0011s ]
+
+[ 2016-07-27T17:33:52+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 0,2   [ RunTime:0.0002s ]
+
+[ 2016-07-27T17:33:55+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 4,2   [ RunTime:0.0002s ]
+
+[ 2016-07-27T17:34:14+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: UPDATE `shop_user` SET `password`='test',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0005s ]
+

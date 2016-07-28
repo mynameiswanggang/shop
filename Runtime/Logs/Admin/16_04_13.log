@@ -1,0 +1,811 @@
+[ 2016-04-13T17:57:33+08:00 ] 127.0.0.1 /index.php/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.1700s ]
+SQL: SELECT * FROM `shop_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0580s ]
+NOTIC: [8] Undefined index: validate D:\phpfind\WWW\thinkphp\Think\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpfind\WWW\thinkphp\Think\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `shop_user` SET `login_count`='9',`login_time`='1460541452',`login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: uid D:\phpfind\WWW\thinkphp\Think\Library\Org\Util\Rbac.class.php 第 85 行.
+NOTIC: [8] Undefined index: superadmin D:\phpfind\WWW\thinkphp\Think\Library\Org\Util\Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from shop_role as role,shop_role_user as user,shop_role_node as access ,shop_node as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.1990s ]
+
+[ 2016-04-13T17:57:52+08:00 ] 127.0.0.1 /index.php/Admin/user/login.html
+ERR: 非法操作:login
+
+[ 2016-04-13T17:58:14+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-13T17:58:17+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-13T17:58:30+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0000s ]
+
+[ 2016-04-13T17:58:38+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:01:17+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:01:18+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:02:22+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:03:22+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:03:23+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:04:19+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:04:34+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:08:09+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0020s ]
+
+[ 2016-04-13T18:08:29+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:08:38+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:09:41+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:09:45+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0020s ]
+
+[ 2016-04-13T18:09:58+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:10:06+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:10:14+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2016-04-13T18:10:15+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2016-04-13T22:11:12+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `username`='wanggang',`password`='a08dd655a04c8c4cd541c92c6d5d1350',`email`='wanggang@qq.com',`create_time`='2016',`login_time`='2016',`login_ip`='127.0.0.1',`status`='1',`login_count`='1' WHERE `id` = 2 [ RunTime:0.2860s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='2' WHERE `user_id` = '2' [ RunTime:0.0020s ]
+
+[ 2016-04-13T22:11:18+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_user` SET `username`='wanggang',`password`='a08dd655a04c8c4cd541c92c6d5d1350',`email`='wanggang@qq.com',`create_time`='2016',`login_time`='2016',`login_ip`='127.0.0.1',`status`='1',`login_count`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0150s ]
+
+[ 2016-04-13T22:13:04+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='test',`email`='test@qq.com',`create_time`='2016',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='2' WHERE `user_id` = '3' [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:13:07+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0240s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='test',`email`='test@qq.com',`create_time`='2016',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0160s ]
+
+[ 2016-04-13T22:15:58+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='test',`email`='test@qq.com',`create_time`='1970',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='1' WHERE `user_id` = '3' [ RunTime:0.1260s ]
+
+[ 2016-04-13T22:18:17+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 2,2   [ RunTime:0.0040s ]
+
+[ 2016-04-13T22:18:22+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 0,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:27+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 2,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:29+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 4,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:31+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 8,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:33+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 10,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:34+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0740s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 12,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:40+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 0,2   [ RunTime:0.0030s ]
+
+[ 2016-04-13T22:18:42+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 2,2   [ RunTime:0.0020s ]
+
+[ 2016-04-13T22:18:44+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 0,2   [ RunTime:0.0050s ]
+
+[ 2016-04-13T22:18:50+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE ( `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null  ) [ RunTime:0.0770s ]
+
+[ 2016-04-13T22:18:53+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE ( `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null  ) [ RunTime:0.0000s ]
+
+[ 2016-04-13T22:18:55+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE ( `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null  ) [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:19:00+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE ( `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null  ) [ RunTime:0.0070s ]
+
+[ 2016-04-13T22:19:13+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 3 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 4 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 5 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 6 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 7 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 8 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 9 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 10 D:\phpfind\WWW\thinkphp\Think\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE ( `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null AND `id` = null  ) [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:21:56+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0180s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 3 [ RunTime:0.0040s ]
+
+[ 2016-04-13T22:21:58+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:22:20+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0220s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='',`email`='test@qq.com',`create_time`='1970',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='2' WHERE `user_id` = '3' [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:23:16+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0210s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='',`email`='test@qq.com',`create_time`='1970',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0180s ]
+
+[ 2016-04-13T22:23:32+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='',`email`='test@qq.com',`create_time`='1970',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0140s ]
+
+[ 2016-04-13T22:23:43+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0170s ]
+SQL: UPDATE `shop_user` SET `username`='test',`password`='',`email`='test@qq.com',`create_time`='1970',`login_time`='1970',`login_ip`='',`status`='1',`login_count`='1' WHERE `id` = 3 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0300s ]
+
+[ 2016-04-13T22:24:41+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0170s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 3 [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:24:41+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0270s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 3 [ RunTime:0.0010s ]
+
+[ 2016-04-13T22:24:48+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `password`='',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0140s ]
+
+[ 2016-04-13T22:25:15+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0210s ]
+SQL: UPDATE `shop_user` SET `password`='',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0150s ]
+
+[ 2016-04-13T22:27:15+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `password`='',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0140s ]
+
+[ 2016-04-13T22:28:27+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `password`='',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0140s ]
+
+[ 2016-04-13T22:30:50+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `password`='',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0020s ]
+
+[ 2016-04-13T22:33:15+08:00 ] 127.0.0.1 /index.php/Admin/user/saveUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `password`='test',`email`='test@qq.com' WHERE `id` = 3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_role_user` [ RunTime:0.0190s ]
+SQL: UPDATE `shop_role_user` SET `role_id`='1' WHERE `user_id` = '3' [ RunTime:0.0010s ]
+

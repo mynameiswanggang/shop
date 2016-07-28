@@ -1,0 +1,325 @@
+
+<!-- Title area -->
+<div class="titleArea">
+	<div class="wrapper">
+		<div class="pageTitle">
+			<h5>{$pageTitle}</h5>
+			<span>{$pageDesc}</span>
+		</div>
+		<div class="middleNav">
+			<ul>
+				<li class="mUser"><a href="#" title=""><span class="users"></span></a>
+					<ul class="mSub1">
+						<li><a href="#" title="">Add user</a></li>
+						<li><a href="#" title="">Statistics</a></li>
+						<li><a href="#" title="">Orders</a></li>
+					</ul></li>
+				<li class="mMessages"><a href="#" title=""><span
+						class="messages"></span></a>
+					<ul class="mSub2">
+						<li><a href="#" title="">New tickets<span
+								class="numberRight">8</span></a></li>
+						<li><a href="#" title="">Pending tickets<span
+								class="numberRight">12</span></a></li>
+						<li><a href="#" title="">Closed tickets</a></li>
+					</ul></li>
+				<li class="mFiles"><a href="#" title="Or you can use a tooltip"
+					class="tipN"><span class="files"></span></a></li>
+				<li class="mOrders"><a href="#" title=""><span
+						class="orders"></span><span class="numberMiddle">8</span></a>
+					<ul class="mSub4">
+						<li><a href="#" title="">Pending uploads</a></li>
+						<li><a href="#" title="">Statistics</a></li>
+						<li><a href="#" title="">Trash</a></li>
+					</ul></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class="line"></div>
+
+<!-- Page statistics area -->
+<div class="statsRow">
+	<div class="wrapper">
+		<div class="controlB">
+			<ul>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/plus.png" alt="" /><span>Add
+							new session</span></a></li>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/database.png"
+						alt="" /><span>New DB entry</span></a></li>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/hire-me.png"
+						alt="" /><span>Add new user</span></a></li>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/statistics.png"
+						alt="" /><span>Check statistics</span></a></li>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/comment.png"
+						alt="" /><span>Review comments</span></a></li>
+				<li><a href="#" title=""><img
+						src="{$Think.const.ADMIN_IMG_URL}icons/control/32/order-149.png"
+						alt="" /><span>Check orders</span></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<div class="line"></div>
+
+<!-- Main content wrapper -->
+<div id="userInfoList">
+<div  class="wrapper">
+
+	<!-- Dynamic table -->
+	<div class="widget">
+		<div class="title">
+			<img src="{$Think.const.ADMIN_IMG_URL}icons/dark/full2.png" alt=""
+				class="titleIcon" />
+			<h6>管理员列表</h6>
+		</div>
+		<table cellpadding="0" cellspacing="0" border="0" class="display dTable">
+            <thead>
+            <tr>
+				<th v-for="title in tableTitle">
+					{{title}}
+				</th>
+			</tr>
+            </thead>
+            
+            <tbody>
+ 				<tr v-for="user in userList">
+ 					<td>{{user.username}}</td>
+ 					<td>{{user.role}}</td>
+ 					<td>{{user.email}}</td>
+ 					<td>{{user.create_time}}</td>
+ 					<td>{{user.login_time}}</td>
+ 					<td>{{user.login_ip}}</td>
+ 					<td>
+ 						<div class="num">
+ 						<a name="{{user.id}}" v-on:click="changeStatus(user.id,user.status,$index)" href="javascript:;" class="blueNum">{{user.status==1?'开启':'禁用'}}</a>
+ 						</div>
+ 					</td>
+ 					<td>{{user.login_count}}</td>
+ 					<td>
+ 						<a href="javascript:;" v-on:click="assignRole(user)">编辑</a>
+ 						|
+ 						<a href="javascript:;" v-on:click="delUser(user.id,user.username)">删除</a>
+ 					</td>
+ 				</tr>
+            </tbody>
+            </table>
+		<div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+		<div class="dataTables_filter">
+		<label>
+		<span class="itemsPerPage">Search:</span> 
+		<input v-model="search_condition" type="text" placeholder="type here...">
+		<div v-on:click="search()" class="srch">
+		</div>
+		</label>
+		</div>
+		<div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers">
+		<span v-if="nowpage!=1" v-on:click="page('first')" class="toFirst ui-corner-tl ui-corner-bl fg-button ui-button">First</span>
+		<span v-if="nowpage!=1" v-on:click="page('prev')" class="previous fg-button ui-button">Prev</span>
+		<span>
+		<span v-if="nowpage>2" v-on:click="page('prevprev')" class="fg-button ui-button">{{nowpage-2}}</span>
+		<span v-if="nowpage>1" v-on:click="page('prev')" class="fg-button ui-button">{{nowpage-1}}</span>
+		<span class="fg-button ui-button ui-state-disabled">{{nowpage}}</span>
+		<span v-if="(lastpage-nowpage)>0" v-on:click="page('next')" class="fg-button ui-button">{{parseInt(nowpage)+1}}</span>
+		<span v-if="(lastpage-nowpage)>1" v-on:click="page('nextnext')" class="fg-button ui-button">{{parseInt(nowpage)+2}}</span>
+		</span>
+		<span v-if="nowpage<lastpage" v-on:click="page('next')" class="next fg-button ui-button">Next</span>
+		<span v-if="nowpage<lastpage" v-on:click="page('last')" class="last ui-corner-tr ui-corner-br fg-button ui-button">Last</span>
+		</div>
+		</div>		
+	</div>
+</div>
+
+<!-- 弹出层 -->
+                <div id="userEdit" style="display:none;">
+                    <div class="title"><img src="{$Think.const.ADMIN_IMG_URL}icons/dark/list.png" alt="" class="titleIcon"><h6>用户信息编辑</h6></div>
+					<div class="formRow">
+                        <label>用户名：</label>
+                        <div class="formRight">
+                        <input v-model="curuser.username" type="text" readonly="readonly">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+                        <label>密码:</label>
+                        <div class="formRight">
+                        <input v-model="curuser.password" name="password" type="password">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                   <div class="formRow">
+                        <label>邮箱:</label>
+                        <div class="formRight"> 
+                        <input v-model="curuser.email" name="email" type="text">
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+                   <div class="formRow">
+                        <label>角色:</label>
+                        <div class="formRight"> 					
+                        <select v-model="curuser.rid" name="role">
+                           <option v-for="role in roleList" value="{{role.id}}">{{role.name}}</option>
+                     	</select>
+                     	</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="formRow">
+	                    <input type="button" v-on:click="esc()"  value="取消" class="blueB">
+	                    <input type="button" v-on:click="saveNewUser()" value="保存" class="blueB">
+                    </div>                                                         
+                </div>
+</div>
+
+<!-- Footer line -->
+<div id="footer">
+	<div class="wrapper">
+		As usually all rights reserved.More Templates <a
+			href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+		- Collect from <a href="http://www.cssmoban.com/" title="网页模板"
+			target="_blank">网页模板</a>
+	</div>
+</div>
+
+</div>
+
+<div class="clear"></div>
+<script>
+
+/*   $(function(){  */
+		var userInfoList = new Vue({
+	 		el:"#userInfoList",
+	 		data:{
+	 			tableTitle:{$tableTitle | json_encode},
+	 			userList:{$userList | json_encode},
+	 			search_condition:'',
+	 			nowpage:'{$nowpage}',
+	 			perpage:'{$perpage}',
+	 			lastpage:'{$lastpage}',
+	 			totalrecord:'{$totalrecord}',
+	 			roleList:{$roleList | json_encode},
+	 			curuser:''
+	 		},
+	 		methods:{
+	 			search:function(){ 				
+	 				var url = "{:U('Admin/user/user_list')}";
+	 				var search = {search:this.search_condition};
+	 				$.post(url,search,function(json){
+	 					userInfoList.userList = json.data;
+	 					userInfoList.nowpage = json.nowPage;
+	 					userInfoList.perpage = json.perPage;
+	 					userInfoList.lastpage = json.lastPage;
+	 					userInfoList.totalrecord = json.totalRecord;
+	 				},'json');
+	 			},
+	 			page:function(pos){
+	 				var url = "{:U('Admin/user/user_list')}";
+	 				var data = '';
+	 				switch(pos){
+	 					case 'first':
+	 						data = {nowPage:1,perPage:parseInt(this.perpage),search:this.search_condition};
+	 						break;
+	 					case 'prevprev':
+	 						data = {nowPage:parseInt(this.nowpage)-2,perPage:this.perpage,search:this.search_condition};
+	 						break;
+	 					case 'prev':
+	 						data = {nowPage:parseInt(this.nowpage)-1,perPage:this.perpage,search:this.search_condition};
+	 						break;
+	 					case 'next':
+	 						data = {nowPage:parseInt(this.nowpage)+1,perPage:this.perpage,search:this.search_condition};
+	 						break;
+	 					case 'nextnext':
+	 						data = {nowPage:parseInt(this.nowpage)+2,perPage:this.perpage,search:this.search_condition};
+	 						break;
+	 					case 'last':
+	 						data = {nowPage:parseInt(this.lastpage),perPage:this.perpage,search:this.search_condtion};
+	 						break;
+	 					default:
+	 						data = {nowPage:1,perPage:this.perpage,search:this.search_condition};
+	 						break;
+	 				}
+	 				$.post(url,data,function(json){	 					
+	 					userInfoList.userList = json.data;
+	 					userInfoList.nowpage = json.nowPage;
+	 					userInfoList.perpage = json.perPage;
+	 					userInfoList.lastpage = json.lastPage;
+	 					userInfoList.totalrecord = json.totalRecord;
+	 				},'json');
+	 			},
+	 			changeStatus:function(id,status,index){
+	 				var url = "{:U('Admin/user/changeStatus')}";
+	 				$.post(url,{uid:id,status:status},function(json){
+	 					if(json.res){
+	 						userInfoList.userList[index].status = status?0:1;
+	 					}
+	 				},'json');
+	 			},
+	 			assignRole:function(user){
+	 				user.password = '';
+	 				this.curuser = user;
+	 				$.blockUI({
+	 					message:$('#userEdit'),
+	 				    css: {
+	 				        padding:        10,
+	 				        margin:         10,
+	 				        width:          '40%',
+	 				        top:            '10%',
+	 				        left:           '35%',
+	 				        textAlign:      'center',
+	 				        color:          '#000',
+	 				        border:         '3px solid #aaa',
+	 				        backgroundColor:'#fff',
+	 				        cursor:         'wait'
+	 				    },
+	 				   focusInput: true	
+	 					});
+	 				
+	 			},
+	 			saveNewUser:function(){
+	 				if(!confirm('你确定要修改吗？')){
+	 					return;
+	 				}
+	 				var url = "{:U('Admin/user/saveUser')}";
+	 				$.post(url,{user:this.curuser},function(json){
+	 					if(json.res){
+	 						alert('修改成功!');
+	 						$.unblockUI();
+	 						location.reload();
+	 						
+	 					}
+	 				},'json');
+	 			},
+	 			esc:function(){
+	 				$.unblockUI();
+	 			},
+	 			delUser:function(id,username){
+	 				if(!confirm('确实要删除此用户吗？')){
+	 					return;
+	 				}
+	 				var url = "{:U('Admin/user/delUser')}";
+	 				$.post(url,{id:id,username:username},function(json){
+	 					if(json.res){
+	 						alert('删除成功!');
+	 						location.reload();
+	 						
+	 					}
+	 				},'json');
+	 			}
+	 		}
+	 	}); 
+		//console.log(userInfoList.userList);
+/*   });	 */
+
+  
+  </script>
+</body>
+</html>

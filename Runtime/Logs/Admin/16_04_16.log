@@ -1,0 +1,36 @@
+[ 2016-04-16T20:44:52+08:00 ] 127.0.0.1 /index.php/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0371s ]
+SQL: SELECT * FROM `shop_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /data/www/thinkphp/Think/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `shop_user` SET `login_count`='10',`login_time`='1460810692',`login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0128s ]
+NOTIC: [8] Undefined index: uid /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 85 行.
+NOTIC: [8] Undefined index: superadmin /data/www/thinkphp/Think/Library/Org/Util/Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from shop_role as role,shop_role_user as user,shop_role_node as access ,shop_node as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0024s ]
+
+[ 2016-04-16T20:45:08+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 4,2   [ RunTime:0.0010s ]
+
+[ 2016-04-16T20:45:14+08:00 ] 127.0.0.1 /index.php/Admin/user/user_list.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /data/www/thinkphp/Shop/Common/Controller/AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT shop_user.id,shop_user.username,shop_user.password,shop_role.name AS `role`,shop_role.id AS `rid`,shop_user.email,from_unixtime(shop_user.create_time,"%Y-%m-%d") as create_time,from_unixtime(shop_user.login_time,"%Y-%m-%d") as login_time,shop_user.login_ip,shop_user.status,shop_user.login_count FROM `shop_user` LEFT JOIN shop_role_user ON shop_user.id = shop_role_user.user_id LEFT JOIN shop_role ON shop_role_user.role_id = shop_role.id  ORDER BY `login_time` desc LIMIT 0,2   [ RunTime:0.0002s ]
+

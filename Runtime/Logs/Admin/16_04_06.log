@@ -1,0 +1,139 @@
+[ 2016-04-06T21:39:35+08:00 ] 127.0.0.1 /index.php/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.1480s ]
+SQL: SELECT * FROM `shop_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.1180s ]
+NOTIC: [8] Undefined index: validate D:\phpfind\WWW\thinkphp\Think\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpfind\WWW\thinkphp\Think\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `shop_user` SET `login_count`='8',`login_time`='1459949975',`login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0390s ]
+NOTIC: [8] Undefined index: uid D:\phpfind\WWW\thinkphp\Think\Library\Org\Util\Rbac.class.php 第 85 行.
+NOTIC: [8] Undefined index: superadmin D:\phpfind\WWW\thinkphp\Think\Library\Org\Util\Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from shop_role as role,shop_role_user as user,shop_role_node as access ,shop_node as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.2480s ]
+
+[ 2016-04-06T22:10:08+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+NOTIC: [2] Missing argument 2 for Admin\Model\UserModel::change(), called in D:\phpfind\WWW\thinkphp\Shop\Admin\Controller\UserController.class.php on line 136 and defined D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 204 行.
+NOTIC: [8] Undefined variable: status D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: status D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 208 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 AND `status` = null [ RunTime:0.1250s ]
+
+[ 2016-04-06T22:10:22+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+NOTIC: [2] Missing argument 2 for Admin\Model\UserModel::change(), called in D:\phpfind\WWW\thinkphp\Shop\Admin\Controller\UserController.class.php on line 136 and defined D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 204 行.
+NOTIC: [8] Undefined variable: status D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 206 行.
+NOTIC: [8] Undefined variable: status D:\phpfind\WWW\thinkphp\Shop\Admin\Model\UserModel.class.php 第 208 行.
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 AND `status` = null [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:11:17+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0290s ]
+
+[ 2016-04-06T22:20:26+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+
+[ 2016-04-06T22:21:57+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 1 AND `status` = 1 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:22:15+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 1 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:24:39+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0180s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:27:17+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0130s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:27:25+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0150s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:27:27+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0000s ]
+
+[ 2016-04-06T22:35:23+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0140s ]
+SQL: UPDATE `shop_user` SET `status`='1' WHERE `id` = 2 AND `status` = 0 [ RunTime:0.0010s ]
+
+[ 2016-04-06T22:37:27+08:00 ] 127.0.0.1 /index.php/Admin/user/changeStatus.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpfind\WWW\thinkphp\Shop\Common\Controller\AuthController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `shop_role` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0160s ]
+SQL: UPDATE `shop_user` SET `status`='0' WHERE `id` = 2 AND `status` = 1 [ RunTime:0.0010s ]
+

@@ -1,0 +1,93 @@
+[ 2016-07-27T15:31:29+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:32:20+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:10+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:11+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:14+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:18+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:19+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:19+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:35:19+08:00 ] 127.0.0.1 /index.php/user/logIn.html
+ERR: 模板不存在:./Home/View/EN/User/logIn.html
+
+[ 2016-07-27T15:44:39+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-07-27T15:45:49+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-07-27T15:49:45+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-07-27T15:50:57+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+
+[ 2016-07-27T15:52:25+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+
+[ 2016-07-27T15:53:05+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+
+[ 2016-07-27T15:53:30+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2016-07-27T15:55:30+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-07-27T15:57:16+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-07-27T15:58:21+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-07-27T15:58:54+08:00 ] 127.0.0.1 /index.php/Home/Homepage/switchLang
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+
